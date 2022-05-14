@@ -17,5 +17,5 @@ const fetchBreedDescription = (breedName, callback) => {
     return callback(null, data[0].description);
 
   });
-}
-  module.exports = { fetchBreedDescription };
+};
+module.exports = { fetchBreedDescription };
