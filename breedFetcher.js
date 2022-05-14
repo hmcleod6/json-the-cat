@@ -12,7 +12,7 @@ const fetchBreedDescription = (breedName, callback) => {
     }
     const data = JSON.parse(body);
     if (!data[0]) {
-      return callback(`No such breed: ${breedName} is not found`, null);
+      return callback('No such breed found', null);
     }
     return callback(null, data[0].description);
 
